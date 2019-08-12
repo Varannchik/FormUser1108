@@ -1,0 +1,25 @@
+{
+  "name": "formuser1108",
+  "version": "1.0.0",
+  "description": "users form",
+  "main": "index.js",
+  "scripts": {
+    "start": "node httpServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Varannchik/FormUser1108.git"
+  },
+  "author": "Anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Varannchik/FormUser1108/issues"
+  },
+  "homepage": "https://github.com/Varannchik/FormUser1108#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "plain-text-data-to-json": "^1.0.2",
+    "txt": "^1.0.0"
+  }
+}
