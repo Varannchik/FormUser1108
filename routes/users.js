@@ -10,5 +10,4 @@ router.get('/', function(req, res) {
     res.send(`<div>${arr}</div>`);
 });
 
-
 module.exports = router;
