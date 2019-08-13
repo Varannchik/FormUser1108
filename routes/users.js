@@ -1,13 +1,13 @@
 const fs = require('fs');
 const express = require('express');
 const router = express.Router();
+const requireJson = require('plain-text-data-to-json');
 
-const arr = fs.readFile("./views/users.txt", "utf8", function(error,data){        
-        if(error) throw error;
-        console.log(data);   
-    });
-router.get('/', function(req, res) {        
-    res.send(`<div>${arr}</div>`);
-});
+    router.get('/', function(req, res) {        
+        const arrUsers = fs.readFileSync("./views/users.txt", "utf8");
+        console.log(arrUsers);
+        const addUsers = requireJson(arrUsers);
+        res.send(`${JSON.stringify(addUsers)}`); 
+    }); 
 
 module.exports = router;
