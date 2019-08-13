@@ -4,7 +4,7 @@
   "description": "users form",
   "main": "index.js",
   "scripts": {
-    "start": "node httpServer.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

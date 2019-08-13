@@ -14,6 +14,6 @@ app.use('/', formsRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouters);
 
-app.listen(3000, ()=>console.log('listen 3000'));
+app.listen(3000, ()=>console.log('Server started 3000'));
 
 module.exports = app;
