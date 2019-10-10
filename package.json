@@ -4,7 +4,7 @@
   "description": "users form",
   "main": "index.js",
   "scripts": {
-    "start": "node httpServer.js"
+    "start": "nodemon httpServer.js"
   },
   "repository": {
     "type": "git",

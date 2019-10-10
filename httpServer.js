@@ -1,19 +1,11 @@
-const express = require('express');
-const bodyParser = require("body-parser");
-const app = express();
+gitconst express = require('express');
+const app = express(); 
 
-const apiRouter = require('./routes/api')
-const formsRouter = require('./routes/forms')
-const usersRouters = require('./routes/users')
+const userRouter = require('./routs/user');
+app.use('/user',userRouter);
 
 app.set('view engine','ejs');
 
-app.use(bodyParser.urlencoded({extended:false}));
-
-app.use('/', formsRouter);
-app.use('/api', apiRouter);
-app.use('/users', usersRouters);
-
-app.listen(3000, ()=>console.log('Server started 3000'));
-
-module.exports = app;
+app.listen(3000,()=>{
+    console.log('listening on port 3000');
+})
